@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Stack Notes (Unit-1)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web Stack Notes (Unit-1)</h1>
+    </header>
+
+    <nav>
+        <a class="button" href="#client-server">Client-Server Components</a>
+        <a class="button" href="#http-characteristics">HTTP Characteristics & Components</a>
+        <a class="button" href="#http-request">HTTP Request Format</a>
+        <a class="button" href="#request-url">Request URL</a>
+        <a class="button" href="#cookies">Cookies</a>
+        <a class="button" href="#json">JSON - Syntax, Arrays, Datatypes</a>
+        <a class="button" href="#rest">REST</a>
+        <a class="button" href="#search-engine">Search Engine, Web Crawling, SEO</a>
+        <a class="button" href="#ssl">SSL and How it Works</a>
+    </nav>
+
+    <main>
+        <section id="client-server">
+            <h2>Client-Server Components</h2>
+            <img src="https://th.bing.com/th/id/OIP.vEaL1yIsEUc4AILpQBpp1AAAAA?w=335&h=186&c=7&r=0&o=5&pid=1.7" alt="Client-Server Image">
+            <p><strong>Client:</strong> A device or program that makes a request to a server to access resources or services.</p>
+            <p><strong>Server:</strong> A system that provides resources or services to clients based on their requests.</p>
+            <p>This architecture is fundamental to web applications where the client is typically a web browser and the server is a web server hosting a website or web service.</p>
+        </section>
+
+        <section id="http-characteristics">
+            <h2>HTTP Characteristics & Components</h2>
+            <img src="https://wisecleaner.files.wordpress.com/2021/02/1204.png" alt="HTTP Characteristics Image">
+            <p><strong>HTTP (Hypertext Transfer Protocol):</strong> The foundation of data communication on the Web.</p>
+            <ul>
+                <li><strong>Stateless:</strong> Each request from a client to server is independent.</li>
+                <li><strong>Text-based protocol.</strong></li>
+            </ul>
+            <p>Components:</p>
+            <ul>
+                <li><strong>Request:</strong> Made by the client to the server consisting of a request line, headers, and an optional body.</li>
+                <li><strong>Response:</strong> Sent by the server back to the client consisting of a status line, headers, and an optional body.</li>
+            </ul>
+        </section>
+
+        <section id="http-request">
+            <h2>HTTP Request Format</h2>
+            <img src="https://softuni.org/wp-content/uploads/2022/07/HTTP-Request-Methods-e1657276635747.png" alt="HTTP Request Methods Image">
+            <p>HTTP (Hypertext Transfer Protocol) specifies a collection of request methods to specify what action is to be performed on a particular resource. The most commonly used HTTP request methods are GET, POST, PUT, PATCH, and DELETE. These are equivalent to the CRUD operations (create, read, update, and delete).</p>
+            <ul>
+                <li><strong>GET:</strong> GET request is used to read/retrieve data from a web server. GET returns an HTTP status code of 200 (OK) if the data is successfully retrieved from the server.</li>
+                <li><strong>POST:</strong> POST request is used to send data (file, form data, etc.) to the server. On successful creation, it returns an HTTP status code of 201.</li>
+                <li><strong>PUT:</strong> A PUT request is used to modify the data on the server. It replaces the entire content at a particular location with data that is passed in the body payload. If there are no resources that match the request, it will generate one.</li>
+                <li><strong>PATCH:</strong> PATCH is similar to PUT request but the only difference is it modifies a part of the data. It will only replace the content that you want to update.</li>
+                <li><strong>DELETE:</strong> A DELETE request is used to delete the data on the server at a specified location.</li>
+            </ul>
+        </section>
+
+        <section id="request-url">
+            <h2>Request URL</h2>
+            <img src="https://realisable.co.uk/support/documentation/Resources/Images/UG/2.IMan%20Data%20Concepts/Web%20Request-GET.png" alt="request-url Image ">
+            <p><strong>Uniform Resource Identifier (URI):</strong> Identifies the resource on the server.</p>
+            <ul>
+                <li><strong>Scheme:</strong> e.g., http or https.</li>
+                <li><strong>Host:</strong> Domain name or IP address.</li>
+                <li><strong>Path:</strong> Specific location/resource on the server.</li>
+                <li><strong>Query String:</strong> Additional data for the request.</li>
+            </ul>
+        </section>
+
+        <section id="cookies">
+            <h2>Cookies</h2>
+            <img src="https://www.freecodecamp.org/news/content/images/2021/02/fireship-cookies.png" alt="cookies Image">
+            <p><strong>Cookies:</strong> Small text files of information created/updated when visiting a website and stored on the user’s web browser.</p>
+            <p>Cookies are commonly used for information about user sessions, user preferences, and other data on the website. Cookies help websites remember users and track their activities to provide a personalized experience.</p>
+            <h3>Where are cookies stored?</h3>
+            <p>Cookies are stored on a user’s device in the web browser. Depending on the browser and platform, they can be found in different locations. For example, in Windows they are often found in the C:\Users\[username]\AppData\Roaming\[browser name]\Cookies directory.</p>
+            <h3>Types of Cookies:</h3>
+            <ul>
+                <li><strong>Session cookies</strong></li>
+                <li><strong>Persistent cookies</strong></li>
+                <li><strong>First-party cookies</strong></li>
+                <li><strong>Third-party cookies</strong></li>
+            </ul>
+        </section>
+
+        <section id="json">
+            <h2>JSON - Syntax, Arrays, Datatypes</h2>
+            <img src="https://www.hostinger.in/tutorials/wp-content/uploads/sites/2/2019/04/An-explanation-of-the-JSON-value.jpg" alt="JSON Image">
+            <p><strong>JSON (JavaScript Object Notation):</strong> A lightweight format for data exchange.</p>
+            <h3>Syntax:</h3>
+            <ul>
+                <li>Objects are enclosed in {} with key-value pairs.</li>
+                <li>Arrays are enclosed in [].</li>
+            </ul>
+            <h3>Data Types:</h3>
+            <ul>
+                <li>Strings</li>
+                <li>Numbers</li>
+                <li>Booleans</li>
+                <li>Null</li>
+                <li>Objects</li>
+                <li>Arrays</li>
+            </ul>
+        </section>
+
+        <section id="rest">
+            <h2>REST (Representational State Transfer)</h2>
+            <img src="https://www.researchgate.net/profile/Dirk-Pawlaszczyk/publication/360977821/figure/download/fig3/AS:1161855619858437@1654019374292/Concept-of-a-representational-state-transfer-REST-web-application-programming-interface.png" alt="REST Image">
+            <p><strong>REST:</strong> An architectural style that can be applied to web services to create and enhance properties like performance, scalability, and modifiability.</p>
+            <p>RESTful web services are generally highly scalable, light, and maintainable, and are used to create APIs for web-based applications. It exposes API from an application in a secure and stateless manner to the client. The protocol for REST is HTTP.</p>
+            <p>REST emerged as the predominant Web service design model just a couple of years after its launch, measured by the number of Web services that use it.</p>
+            <h3>Advantages of REST:</h3>
+            <ul>
+                <li><strong>Simplicity:</strong> RESTful APIs use standard HTTP methods (GET, POST, PUT, DELETE), which are easy to understand and use.</li>
+                <li><strong>Statelessness:</strong> Each request from a client to the server must contain all the information needed to understand and complete the request.</li>
+                <li><strong>Scalability:</strong> Due to its stateless nature, REST can scale more efficiently by using multiple servers.</li>
+                <li><strong>Flexibility:</strong> REST APIs can handle multiple types of calls, return different data formats, and change structurally with the correct use of hypermedia.</li>
+            </ul>
+        </section>
+
+        <section id="search-engine">
+            <h2>Search Engine, Web Crawling, SEO</h2>
+            <img src="https://www.elegantespace.com/wp-content/uploads/2018/01/search-engine-crawlers.jpg" alt="search-engine Image">
+            <p><strong>Search Engine:</strong> A software system designed to search for information on the World Wide Web. Examples include Google, Bing, and Yahoo.</p>
+            <h3>Web Crawling:</h3>
+            <p>Web crawlers or spiders are automated scripts that browse the web and index web pages. The crawlers work by visiting a website, downloading its content, and following all the links on the page to find other pages.</p>
+            <h3>SEO (Search Engine Optimization):</h3>
+            <p>SEO involves optimizing web pages to rank higher in search engine results, thus increasing the amount of organic (non-paid) traffic the website receives.</p>
+            <ul>
+                <li><strong>On-page SEO:</strong> Refers to the content and HTML source code of a page that can be optimized.</li>
+                <li><strong>Off-page SEO:</strong> Involves promotion methods beyond website design to improve search rankings, like backlinking.</li>
+            </ul>
+        </section>
+
+        <section id="ssl">
+            <h2>SSL and How it Works</h2>
+            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWzB5X7XHBkhdmveVcw8igiROq281IT4NpJGfbHukjg7xjTJmD7eQkeGEepctX40SoupT8H-ckoNIM3uxuMO7SV8dSYnEgOrmUKPthvJneQUK9m8_2m5oiT9Vha7dmwDOJ1WCm2RehNKIFzikWuOy5vuOSipXBNVk88Ccu4-kqSbcOs-IWzsauuSDp/s600/how_ssl_works.png" alt="SSL Image">
+            <p><strong>SSL (Secure Sockets Layer):</strong> A standard security protocol for establishing encrypted links between a web server and a browser in an online communication.</p>
+            <h3>How SSL Works:</h3>
+            <ol>
+                <li>The client sends a request to the server for a secure session.</li>
+                <li>The server sends its SSL certificate to the client, which contains the server's public key.</li>
+                <li>The client validates the SSL certificate against trusted authorities.</li>
+                <li>If the certificate is valid, the client generates a session key, encrypts it with the server's public key, and sends it to the server.</li>
+                <li>The server decrypts the session key using its private key, establishing a secure session.</li>
+                <li>All subsequent communication is encrypted with the session key.</li>
+            </ol>
+            <p>SSL is essential for protecting sensitive data, such as credit card numbers, as it is transmitted over the Internet.</p>
+        </section>
+    </main>
+
+</body>
+</html>
